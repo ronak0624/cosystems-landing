@@ -24,6 +24,11 @@ p {
   color: rgba(255, 255, 255, 0.3);
 }
 
+a{
+  border: none;
+  background: none;
+}
+
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -88,41 +93,16 @@ ul.nav li{
   background-color: #fff;
 }
 
-.navbar div a{
+.navbar .container a{
   color: #00198b;
 }
 
 @media (max-width: 768px){
-  .navbar-brand: 
+  
 }
-#mainNav {
-  background-color: #fff;
-  font-family: 'Europa';
-}
-
-#mainNav .navbar-brand {
-  float:left;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(0, 26, 139, 0.5);
-  font-weight: 800;
-}
-
-#mainNav .navbar-nav .nav-item.active .nav-link {
-  color: rgba(0, 26, 139, 1);
-}
-
-@media (min-width: 992px) {
-  #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(0, 26, 139, 0.6);
-  }
-  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #001a8b;
-  }
+#mainNav .btn-group button{
+  box-shadow: none;
+  color: #00198b;
 }
 
 .btn-xl {
@@ -175,17 +155,6 @@ ul.nav li{
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
-
-/* .cta .cta-inner:before {
-  border-radius: 0.5rem;
-  content: '';
-  position: absolute;
-  top: -0.5rem;
-  bottom: -0.5rem;
-  left: -0.5rem;
-  right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
-} */
 
 @media (min-width: 992px) {
   .about-heading .about-heading-img {
@@ -259,10 +228,6 @@ ul.nav li{
   background-color: rgba(67, 0, 145, 1) !important;
 }
 
-.btn {
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
-  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
-}
 
 .btn-primary {
   background-color: #00198b;
