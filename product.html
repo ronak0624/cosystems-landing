@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar sticky-top py-1" id="mainNav">
         <div class="container d-flex flex-column flex-md-row justify-content-between collapse navbar-collapse py-4">
-            <a class="navbar-brand py-2" href="#">
+            <a class="navbar-brand py-2" href="index.html">
                 <img src="img/cosyslogo2.png" alt="logo" height="40">
             </a>
             <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#home">Home</a>
@@ -46,9 +46,10 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row product">
             <div class="col">
-                <div class="p-5 product-info w-50">
+                <div class="product-info text-right">
+                    <h3 class="text-right">CoISDN</h3>
                     CoISDN is a complete implementation of Basic and Primary
                     rate interfaces for implementing multiple connections
                     as either TE or NT. Created as a set of layered STREAMS
@@ -60,9 +61,17 @@
                     Solaris and Windows NT.
                 </div>
             </div>
-            <div class="col">
+            <div class="product-pdf">
 
             </div>
+        </div>
+        <div class="row mt-5">
+            <h4 class="d-block">Related Products</h4>
+            <ul class="d-block">
+                <li>
+                    <a href="">ISDN BRI/PRI Stack</a>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- Optional JavaScript -->
@@ -76,8 +85,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js'></script>
     <script>
 
+        var $pdf = $('.product-pdf')
+        PDFObject.embed("pdfs/CoISDN.pdf", $pdf);
     </script>
 </body>
 
