@@ -350,6 +350,13 @@ ul.nav li{
   margin-top: 50%;
   transform: translateY(-50%);
 }
+.product a{
+  cursor: pointer;
+  color: #00198b !important;
+}
+.product a:hover{
+  cursor: pointer;
+}
 .product .product-pdf{
   width: 50%;
   height: 40rem;

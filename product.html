@@ -45,27 +45,27 @@
             <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#contact">Contact</a>
         </div>
     </nav>
+    <nav id="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a id="d1" href="#">Home</a></li>
+            <li class="breadcrumb-item"><a id="d2" href="#">Library</a></li>
+            <li id="d3" class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
     <div class="container-fluid">
         <div class="row product">
             <div class="col">
+                <a onclick="getProduct(this)">H.323</a>
                 <div class="product-info text-right">
-                    <h3 class="text-right">CoISDN</h3>
-                    CoISDN is a complete implementation of Basic and Primary
-                    rate interfaces for implementing multiple connections
-                    as either TE or NT. Created as a set of layered STREAMS
-                    modules, available are LAPD, Q.9321 and worldwide
-                    variations with the supporting configuration and
-                    management functions. CoISDN is written in ’C’ is
-                    very light weight and successfully implemented in
-                    a variety of OS including VxWORKS, pSOS, VRTX, Unix,
-                    Solaris and Windows NT.
+                    <h3 id="product-title" class="text-right"></h3>
+                    <p id="product-para"></p>
                 </div>
             </div>
             <div class="product-pdf">
 
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="related-products row mt-5">
             <h4 class="d-block">Related Products</h4>
             <ul class="d-block">
                 <li>
@@ -86,6 +86,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js'></script>
+    <script src="js/product.js"></script>
     <script>
 
         var $pdf = $('.product-pdf')
