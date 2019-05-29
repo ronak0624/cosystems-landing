@@ -268,5 +268,6 @@ function getProduct(item) {
     document.getElementById('d2').innerHTML = selected.dropdown2;
     document.getElementById('d3').innerHTML = selected.dropdown3;
 
-    
+    document.getElementById('').innerHTML = 
+
 }
