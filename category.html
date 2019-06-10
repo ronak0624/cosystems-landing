@@ -51,12 +51,11 @@
       <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="index.html#contact">Contact</a>
     </div>
   </nav>
-  <div class="container-fluid">
+  <div class="container-fluid category">
       <div class="row-fluid">
         <div class="card">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">PTSN Access Modules</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -64,9 +63,8 @@
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">Data Interface Modules</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -74,9 +72,8 @@
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">PSTN Access to IP Systems</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -84,9 +81,8 @@
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">Protocol Stacks</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -94,9 +90,8 @@
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">PSTN Access to IP Module</h5>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -120,9 +115,11 @@
   <script>
     $(document).ready(function(){
         var titles = document.getElementsByClassName('card-title');
+        var texts = document.getElementsByClassName('card-text');
         var categoryJSON = productJSON.productTitle;
         for(i=0;i<titles.length; i++){
-            titles[i].innerHTML = productJSON[i].productTitle;
+            // titles[i].innerHTML = productJSON[i].dropdown1;
+            // texts[i].innerHTML = productJSON[i].summary;
         }
     });
   
