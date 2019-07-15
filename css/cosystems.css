@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/xbg7zzr.css");
 body {
-  font-family: 'Europa';
+  font-family: 'Europa', sans-serif;
   /* background: url("../img/background.png"); */
   background-color: #fff;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Europa';
+  font-family: 'Europa', sans-serif;
   font-weight: 700;
 }
 
