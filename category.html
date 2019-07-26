@@ -60,60 +60,72 @@
             <h5 class="card-header">Featured</h5>
             <div class="card-body">
               <h5 class="card-title">PTSN Access Modules</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
           <div class="col py-4">
-            <ul class="nav flex-column productCat">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">Active</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
-              </li>
-              <li class="nav-item disabled">
-                <a href="#" class="nav-link">Disabled</a>
-              </li>
+            <ul class="nav flex-column category-products">
+
             </ul>
           </div>
         </div>
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">PSTN Access to IP Systems</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="row">
+            <div class="col">
+              <h5 class="card-header">Featured</h5>
+              <div class="card-body">
+                <h5 class="card-title">Data Interface Modules</h5>
+                <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="col py-4">
+              <ul class="nav flex-column category-products">
+
+              </ul>
             </div>
           </div>
+        </div>
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Protocol Stacks</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="row">
+            <div class="col">
+              <h5 class="card-header">Featured</h5>
+              <div class="card-body">
+                <h5 class="card-title">PTSN Access to IP Modules</h5>
+                <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="col py-4">
+              <ul class="nav flex-column category-products">
+
+              </ul>
             </div>
           </div>
+        </div>
       </div>
       <div class="row-fluid my-3">
         <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">PSTN Access to IP Module</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="row">
+            <div class="col">
+              <h5 class="card-header">Featured</h5>
+              <div class="card-body">
+                <h5 class="card-title">Protocol Stacks</h5>
+                <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="col py-4">
+              <ul class="nav flex-column category-products">
+
+              </ul>
             </div>
           </div>
-      </div>
-    </div>
-    <div class="row-fluid my-3">
-      <div class="card">
-        <h5 class="card-header">Featured</h5>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
@@ -133,12 +145,17 @@
   </script>
   <script src="js/product.js"></script>
   <script>
+    function createCardLink(str) {
+      return "<li class='nav-item'><a href='" + str + "' class='nav-link'>" + str + "</a></li>";
+    }
     $(document).ready(function () {
       var titles = document.getElementsByClassName('card-title');
-      var categoryJSON = productJSON.productTitle;
-      for (i = 0; i < titles.length; i++) {
-        titles[i].innerHTML = productJSON[i].productTitle;
-
+      var lists = document.getElementsByClassName('category-products');
+      for (i = 0; i < lists.length; i++) {
+        titles[i].innerHTML = productJSON[i][0].dropdown1;
+        for(j=0;j < productJSON[i].length ;j++){
+          lists[i].innerHTML += createCardLink(productJSON[i][j].productTitle);
+        }
       }
     });
   </script>

@@ -1,5 +1,5 @@
 var productJSON = [
-    {
+  [{
       "dropdown1": "PSTN Access Modules",
       "dropdown2": "ISDN-PRI (TE & NT)",
       "dropdown3": "-",
@@ -40,8 +40,9 @@ var productJSON = [
       "related4": "Convertix-V5_Datasheet_v4.2.pdf",
       "related5": "",
       "related6": ""
-    },
-    {
+    }
+  ],
+  [{
       "dropdown1": "Data Interface Modules",
       "dropdown2": "Frame Relay",
       "dropdown3": "-",
@@ -68,8 +69,9 @@ var productJSON = [
       "related4": "",
       "related5": "",
       "related6": ""
-    },
-    {
+    }
+  ],
+  [{
       "dropdown1": "PSTN Access to IP Systems",
       "dropdown2": "GR-303 to IP",
       "dropdown3": "-",
@@ -110,8 +112,9 @@ var productJSON = [
       "related4": "CoV5.2.pdf",
       "related5": "CoMGCP.pdf",
       "related6": "CoSIP.pdf"
-    },
-    {
+    }
+  ],
+  [{
       "dropdown1": "Protocol Stacks",
       "dropdown2": "Data Protocols",
       "dropdown3": "Frame Relay",
@@ -252,22 +255,24 @@ var productJSON = [
       "related6": ""
     }
   ]
+
+]
 var pTitle = document.getElementById('product-title');
 var pParagraph = document.getElementById('product-para');
 
 function getProduct(item) {
-    var selected;
-    for(i=0; i<productJSON.length; i++){
-        if(productJSON[i].productTitle == item.innerHTML.toString()){
-            selected = productJSON[i];
-        }
+  var selected;
+  for (i = 0; i < productJSON.length; i++) {
+    if (productJSON[i].productTitle == item.innerHTML.toString()) {
+      selected = productJSON[i];
     }
-    pParagraph.innerHTML = selected.summary;
-    pTitle.innerHTML = selected.productTitle;
-    document.getElementById('d1').innerHTML = selected.dropdown1;
-    document.getElementById('d2').innerHTML = selected.dropdown2;
-    document.getElementById('d3').innerHTML = selected.dropdown3;
+  }
+  pParagraph.innerHTML = selected.summary;
+  pTitle.innerHTML = selected.productTitle;
+  document.getElementById('d1').innerHTML = selected.dropdown1;
+  document.getElementById('d2').innerHTML = selected.dropdown2;
+  document.getElementById('d3').innerHTML = selected.dropdown3;
 
-    document.getElementById('').innerHTML;
+  document.getElementById('').innerHTML;
 
 }
