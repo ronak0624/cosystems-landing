@@ -57,17 +57,13 @@
       <div class="card">
         <div class="row">
           <div class="col">
-            <h5 class="card-header">Featured</h5>
             <div class="card-body">
               <h5 class="card-title">PTSN Access Modules</h5>
               <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
           <div class="col py-4">
-            <ul class="nav flex-column category-products">
-
-            </ul>
+            <ul class="nav flex-column category-products"></ul>
           </div>
         </div>
       </div>
@@ -75,17 +71,13 @@
         <div class="card">
           <div class="row">
             <div class="col">
-              <h5 class="card-header">Featured</h5>
               <div class="card-body">
                 <h5 class="card-title">Data Interface Modules</h5>
                 <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="col py-4">
-              <ul class="nav flex-column category-products">
-
-              </ul>
+              <ul class="nav flex-column category-products"></ul>
             </div>
           </div>
         </div>
@@ -94,17 +86,13 @@
         <div class="card">
           <div class="row">
             <div class="col">
-              <h5 class="card-header">Featured</h5>
               <div class="card-body">
                 <h5 class="card-title">PTSN Access to IP Modules</h5>
                 <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="col py-4">
-              <ul class="nav flex-column category-products">
-
-              </ul>
+              <ul class="nav flex-column category-products"></ul>
             </div>
           </div>
         </div>
@@ -113,17 +101,13 @@
         <div class="card">
           <div class="row">
             <div class="col">
-              <h5 class="card-header">Featured</h5>
               <div class="card-body">
                 <h5 class="card-title">Protocol Stacks</h5>
                 <p class="card-text">Elit sint ea elit ad aliquip labore nostrud veniam tempor.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="col py-4">
-              <ul class="nav flex-column category-products">
-
-              </ul>
+              <ul class="nav flex-column category-products"></ul>
             </div>
           </div>
         </div>
@@ -146,7 +130,10 @@
   <script src="js/product.js"></script>
   <script>
     function createCardLink(str) {
-      return "<li class='nav-item'><a href='" + str + "' class='nav-link'>" + str + "</a></li>";
+      return "<li class='nav-item'><a href='product.html' onclick='productLinkClicked(this.innerHTML)' class='nav-link'>" + str + "</a></li>";
+    }
+    function productLinkClicked(link){
+      sessionStorage.setItem('selectedProduct', link);
     }
     $(document).ready(function () {
       var titles = document.getElementsByClassName('card-title');

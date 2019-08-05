@@ -269,10 +269,9 @@ function getProduct(item) {
   }
   pParagraph.innerHTML = selected.summary;
   pTitle.innerHTML = selected.productTitle;
-  document.getElementById('d1').innerHTML = selected.dropdown1;
-  document.getElementById('d2').innerHTML = selected.dropdown2;
-  document.getElementById('d3').innerHTML = selected.dropdown3;
+  $('#d1').html = selected.dropdown1;
+  $('#d2').html = selected.dropdown2;
+  $('#d3').html = selected.dropdown3;
 
-  document.getElementById('').innerHTML;
 
 }

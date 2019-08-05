@@ -244,12 +244,6 @@ ul.nav li{
   border-color: #00198b;
 }
 
-.faqContainer{
-  overflow: scroll;
-  height: 80vh;
-  
-}
-
 .font-weight-light {
   font-weight: 100 !important;
 }
