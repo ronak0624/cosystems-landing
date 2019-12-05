@@ -11,7 +11,9 @@ function App() {
       <div>
         <Nav />
         <Switch>
+          <Route exact path="/" component={Product} />
           <Route exact path="/products" component={Product} />
+          <Route exact path="/about" component={Product} />
           <Route component={NoMatch} />
         </Switch>
       </div>

@@ -7,9 +7,10 @@ router.route("/").get(function (req, res) {
 });
 
 router.route("/:id").get(function (req, res) {
-  for(let i=0; i< productList.length; i++){
-    if(req.params === productList[i].productTitle){
-      res.json(products[i]);
+  let id = req.params.id;
+  for(let i=0; i < productList.length; i++){
+    if(id === productList[i].productTitle){
+      res.json(productList[i]);
     }
   }
 });

@@ -92,8 +92,8 @@ var products = [
     {
       "dropdown1": "Protocol Stacks",
       "dropdown2": "Data Protocols",
-      "dropdown3": "Muti-link PPP",
-      "productTitle": "Muti-link PPP",
+      "dropdown3": "Multi-link PPP",
+      "productTitle": "Multi-link PPP",
       "pdf": "CoPPP-ML.pdf",
       "summary": "CoPPP-ML is a portable, scaleable software implementation of the IETF-defined Point-to-Point Protocol (PPP), MultiLink PPP (ML-PPP) Protocol, Bandwidth Allocation Control Protocol (BAP/BACP) and related standards. Implemented  in ANSI 'C' for rapid portation to any environment, CoPPP-ML is based on a layered STREAMS multiplexor architecture that has been optimized for high bandwidth data throughput.",
       "relatedtitle": "'C' Source ML-PPP Stack",
