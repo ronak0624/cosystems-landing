@@ -11,10 +11,13 @@ function Nav() {
       <div className="navbar-collapse justify-content-md-center collapse">
         <ul className="navbar-nav">
           <a className="navbar-brand" href="/"><b>CoSystems Inc</b></a>
-          <li className="nav-item active">
+          <li className="nav-item">
             <a className="nav-link" href="#">About</a>
           </li>
-          <li>
+          <li className="nav-item">
+            <a className="nav-link" href="/products">Products</a>
+          </li>
+          {/* <li>
             <NavDropdown title="Products" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">PSTN Access Modules</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Data Interface Modules</NavDropdown.Item>
@@ -22,9 +25,9 @@ function Nav() {
               <NavDropdown.Item href="#action/3.1">PSTN Access to IP Module</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Protocol Stacks</NavDropdown.Item>
             </NavDropdown>
-          </li>
+          </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
+            <a className="nav-link" href="#">Support</a>
           </li>
         </ul>
       </div>
