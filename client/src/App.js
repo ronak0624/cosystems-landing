@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import NoMatch from './pages/NoMatch'
 import Home from './pages/Home'
 import Product from './pages/Product'
+import Support from './pages/Support';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Product} />
           <Route exact path="/about" component={Product} />
+          <Route exact path="/support" component={Support} />
           <Route component={NoMatch} />
         </Switch>
       </div>
