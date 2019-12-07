@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
+import axios from 'axios'
 
 const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 const validateForm = (errors) => {
@@ -17,13 +18,20 @@ export default class Form extends Component {
     this.state = {
       fullName: null,
       email: null,
-      password: null,
       errors: {
         fullName: '',
-        email: '',
-        password: '',
-      }
+        email: ''
+      },
+      selectProduct: []
     };
+  }
+
+  componentDidMount = () => {
+    axios.get("/api/products").then(res =>{
+      this.setState({
+          selectProduct: res.data
+      })
+  });
   }
 
   handleChange = (event) => {
@@ -63,33 +71,40 @@ export default class Form extends Component {
   render() {
     const {errors} = this.state;
     return (
-      <div className='row'>
-        <div className='col'>
-          <h2>Create Account</h2>
-          <form onSubmit={this.handleSubmit} noValidate>
-            <div className='fullName'>
-              <label htmlFor="fullName">Name</label>
-              <input type='text' name='fullName' onChange={this.handleChange} noValidate />
-              {errors.fullName.length > 0 && 
-                <span className='error'>{errors.fullName}</span>}
-            </div>
-            <div className='company'>
-              <label htmlFor="company">Company</label>
-              <input type='company' name='company' onChange={this.handleChange} noValidate />
-            </div>
-            <div className='email'>
-              <label htmlFor="email">Email</label>
-              <input type='email' name='email' onChange={this.handleChange} noValidate />
-              {errors.email.length > 0 && 
-                <span className='error'>{errors.email}</span>}
-            </div>
-            <div className='info'>
-              <small>Password must be eight characters in length.</small>
-            </div>
-            <div className='submit'>
-              <button>Create</button>
-            </div>
-          </form>
+      <div className="container">
+        <div className='row'>
+          <div className='col wrapper'>
+            <h2 className="mb-4 mt-5">Contact support</h2>
+            <form onSubmit={this.handleSubmit} noValidate>
+              <div className='support-input'>
+                <label htmlFor="fullName">Name</label>
+                <input type='text' name='fullName' onChange={this.handleChange} noValidate />
+                {errors.fullName.length > 0 && 
+                  <span className='error'>{errors.fullName}</span>}
+              </div>
+              <div className='support-input'>
+                <label htmlFor="company">Company</label>
+                <input type='text' name='company' onChange={this.handleChange} noValidate />
+              </div>
+              <div className='support-input'>
+                  <label htmlFor="company">Product in question</label>
+                  <select>
+                  {this.state.selectProduct.map(product => (
+                  <option>{product.productTitle}</option>
+                ))}
+                  </select>
+              </div>
+              <div className='support-input'>
+                <label htmlFor="email">Email</label>
+                <input type='email' name='email' onChange={this.handleChange} noValidate />
+                {errors.email.length > 0 && 
+                  <span className='error'>{errors.email}</span>}
+              </div>
+              <div className='submit'>
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     );

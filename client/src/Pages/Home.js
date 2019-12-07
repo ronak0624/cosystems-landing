@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
+import {browserHistory} from 'react-router'
 import './styles/home.css'
 
 export default class Home extends Component {
+
+    buttonPath = (path) => {
+        window.location.href = path
+    }
     
     render() {
         return (
@@ -43,7 +48,7 @@ export default class Home extends Component {
                                         domain.
                                         Our solutions include signal conversion, access gateways, signaling gateways, and media
                                         gateways.
-                                    <button onClick={() => this.nextPath('/products') } className="d-block mt-4">Learn about our products</button>
+                                    <a href="/products" className="d-block mt-4 btn-link">Learn about our products</a>
                                     </div>
                                 </div>
 

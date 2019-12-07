@@ -1,0 +1,34 @@
+.support-input label {
+    display: block;
+    font-size: 22px;
+    color: rgb(97, 97, 97);
+}
+
+.support-input {
+    margin-bottom: 0.5rem;
+}
+
+.support-input span.error {
+    display: block;
+    padding-top: 0.6rem;
+    color: rgb(185, 0, 0);
+}
+
+.support-input input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #101010;
+    font-weight: bolder;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.support-input input:focus {
+    outline: none !important;
+}
+
+.wrapper {
+    margin-left: auto;
+}

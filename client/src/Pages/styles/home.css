@@ -68,9 +68,24 @@ button {
     padding: 18px 36px;
     transition: 0.2s;
 }
-button:hover{
+
+a.btn-link{
+    background: none;
+    border: .3pt solid rgba(0, 25, 139, 0.7);
+    text-transform: uppercase !important;
+    text-align: center;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    padding: 18px 36px;
+    transition: 0.2s;
+    width: 50%;
+    margin: 0 auto;
+}
+button:hover,
+a.btn-link:hover{
     background: rgb(0,25,139);
     color: white;
+    text-decoration: none;
 }
 .services {
     background: #161616;
