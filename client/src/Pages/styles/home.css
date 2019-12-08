@@ -79,7 +79,7 @@ a.btn-link{
     padding: 18px 36px;
     transition: 0.2s;
     width: 50%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 button:hover,
 a.btn-link:hover{

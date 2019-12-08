@@ -38,7 +38,7 @@ export default class Product extends Component {
             <div>
                 <Container className="mt-5">
                     <Row>
-                        <h2>Our Products</h2>
+                        <h2 className="ml-4">Our Products</h2>
                     </Row>
                     <Row className="no-gutters">
                         <Col md="3">

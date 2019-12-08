@@ -1,5 +1,6 @@
 import React from "react";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from "../../img/cosyslogo.png";
 import "./style.css";
 
 function Nav() {
@@ -10,9 +11,9 @@ function Nav() {
       </button>
       <div className="navbar-collapse justify-content-md-center collapse py-3">
         <ul className="navbar-nav">
-          <a className="navbar-brand" href="/"><b>CoSystems Inc</b></a>
+          <a href="/"><img className="logo" src={Logo}></img></a>
           <li className="nav-item mx-5">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="/">Home</a>
           </li>
           <li className="nav-item mx-5">
             <a className="nav-link" href="/products">Products</a>

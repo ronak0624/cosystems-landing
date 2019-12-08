@@ -18,6 +18,9 @@ export default class Form extends Component {
     this.state = {
       fullName: null,
       email: null,
+      company: null,
+      message: null,
+      product: null,
       errors: {
         fullName: '',
         email: ''
@@ -62,7 +65,7 @@ export default class Form extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     if(validateForm(this.state.errors)) {
-      console.info('Valid Form')
+      console.info(this.state)
     }else{
       console.error('Invalid Form')
     }
@@ -88,7 +91,7 @@ export default class Form extends Component {
               </div>
               <div className='support-input'>
                   <label htmlFor="company">Product in question</label>
-                  <select>
+                  <select name="product" onChange={this.handleChange}>
                   {this.state.selectProduct.map(product => (
                   <option>{product.productTitle}</option>
                 ))}
@@ -99,6 +102,10 @@ export default class Form extends Component {
                 <input type='email' name='email' onChange={this.handleChange} noValidate />
                 {errors.email.length > 0 && 
                   <span className='error'>{errors.email}</span>}
+              </div>
+              <div className='support-input'>
+                <label htmlFor="message">Details of issue</label>
+                <textarea type='text' name='message' onChange={this.handleChange} noValidate />
               </div>
               <div className='submit'>
                 <button>Submit</button>

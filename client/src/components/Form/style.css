@@ -14,7 +14,8 @@
     color: rgb(185, 0, 0);
 }
 
-.support-input input {
+.support-input input,
+.support-input textarea {
     width: 100%;
     padding: 5px;
     border: none;
@@ -25,10 +26,14 @@
     border-bottom: 1px solid #c9c9c9;
 }
 
-.support-input input:focus {
+.support-input input:focus, 
+.support-input textarea:focus {
     outline: none !important;
 }
 
 .wrapper {
     margin-left: auto;
+}
+.logo{
+    height: 40px;
 }
