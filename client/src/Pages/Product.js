@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import './styles/products.css';
 import axios from 'axios';
+var images = require.context('../img/previews', true);
 
 // function ActionLink() {
 //     function handleClick(e) {
@@ -20,7 +21,7 @@ export default class Product extends Component {
     state = {
         title: "",
         summary: "",
-
+        imgPath: ""
     }
 
     handleClick = (event) => {
@@ -28,12 +29,14 @@ export default class Product extends Component {
         axios.get("/api/products/" + clickedTitle).then(res =>{
             this.setState({
                 title: res.data.productTitle,
-                summary: res.data.summary
+                summary: res.data.summary,
+                imgPath: res.data.preview
             })
         });
     }
     
     render() {
+
         return (
             <div>
                 <Container className="mt-5">
@@ -111,6 +114,9 @@ export default class Product extends Component {
                             <p className="summary">
                             {this.state.summary}
                             </p>
+                        </Col>
+                        <Col md="6">
+                            {/* <img src={require("../img/previews/" + this.state.imgPath)}></img> */}
                         </Col>
                     </Row>
                     <Row>

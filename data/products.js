@@ -35,6 +35,7 @@ var products = [
       "dropdown3": "-",
       "productTitle": "Frame Relay",
       "pdf": "DC4800FR-Rev1.2.pdf",
+      "preview": "DC4800FR-Rev1.2.png",
       "summary": "DC4800FR is a high-density data communication CompactPCI module  capable of generating and processing Frame Relay traffic mulriple T1/E1/J1 interfaces - up to 16 interfaces can be configured. The on-board software  implement sthe industry-standard Frame Relay protocols and associated standards as defined by ANSI, Frame Relay Forum (FRF), ITU/CCITT, and the IETF. DC4800FR supports both Permanent Virtual Circuit (PVC) connections and Switched Virtual Circuit (SVC) connections across public and private Frame Relay networks.The platform can be rapidly integrated and deployed for high-performance and high density Frame Relay communications to a myriad of end points. Sample host applications for a variety of operating systems including Linux and RTOS are provided in source code to aid quick integration.",
       "relatedtitle": "Frame Relay cPCI Card with 16 T1/E1",
       "related": [ "CoFrameRelay.pdf"]
@@ -45,6 +46,7 @@ var products = [
       "dropdown3": "-",
       "productTitle": "MultiLink-PPP",
       "pdf": "DC4800PPP-ML-Rev3.3.pdf",
+      "preview": "DC4800PPP-ML-Rev3.3.png",
       "summary": "DC4800PP is a MultiLink PPP  based data communication platform implemented as a CompactPCI module, capable of generating and processing PPP/ML-PPP traffic on up to 16  T1/E1 interfaces simultabneously and a 100 mbps fast Ethernet connection.  16 E1 connections fully utilized can offer WAN connection of 32 mbps. The fully configurable on-board software is a  scalable s implementation of the IETF-defined family of protocols: Point-to-Point Protocol (PPP),  MultiLink PPP (ML-PPP) Protocol, Bandwidth Allocation Control Protocol (BAP/BACP) and related standards. The module can also be configured with CoVPN software to implement end to end VPN connectivity. Sample host applications for a variety of operating systems including Linux and RTOS are provided in source code to aid quick integration.",
       "relatedtitle": "MLPPP cPCI Card with 16 T1/E1",
       "related": ["CoPPP-ML.pdf","CoVPN.pdf"]
