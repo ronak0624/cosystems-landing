@@ -10,4 +10,7 @@ router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
+// Thumbnail routes
+app.use('/preview', express.static(path.join(__dirname, '/data/previews')))
+
 module.exports = router;
