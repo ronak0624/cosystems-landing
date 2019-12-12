@@ -5,6 +5,7 @@ var products = [
       "dropdown3": "-",
       "productTitle": "ISDN-PRI (TE & NT)",
       "pdf": "PG4800PR-Rev1.3.pdf",
+      "preview": "PG4800PR-Rev1.3.png",
       "summary": "PG4800PR is a high density T1/E1 ISDN PRI CompactPCI module available to developers and systems integrators to rapidly add  ISDN PRI functions for diverse telecommunications equipment, PBX and signaling conversion systems. The ISDN-PRI software supports CCITT Q.931/932, Q.921/922, I.430 and is fully configurable for world-wide class 5 switches as TE or to PBXs as NT, and is guaranteed for local homologation. Onboard software is pre-ploaded and controllable from CompactPCI host. Sample host applications for a variety of operating systems including Linux and RTOS are provided in source code to aid quick integration.",
       "relatedtitle": "ISDN cPCI Card with 16 T1/E1",
       "related": ["CoISDN.pdf"]
@@ -15,6 +16,7 @@ var products = [
       "dropdown3": "-",
       "productTitle": "GR-303 (RDT & IDT)",
       "pdf": "PG4800GR-Rev1.2.pdf",
+      "preview": "PG4800GR-Rev1.2.png",
       "summary": "PG4800GR is high density Telcordia GR-303 access signalling platform available to developers and systems integrators to rapdily develop remote digital terminals to connect to North American Class 5 switches or to implement the IDT functionality of a Class 5 switch to terminate exisitng RDTs thus supporting migraion TDM to IP based routed networks. It supports up-to 16 T1 interfaces and can be  configured partly as IDT and/or RDT. All 384 TDM channels are routed on the cPCI TDM backplane. Onboard software is pre-ploaded and controllable from CompactPCI host. Sample host applications for a variety of operating systems including Linux and RTOS are provided in source code to aid quick integration.",
       "relatedtitle": "GR-303 cPCI Card with 16 T1",
       "related": ["CoGR303.pdf","V4800IP_Datasheet_v4.2.pdf","Convertix-GR303_Datasheet_v4.2.pdf"]
@@ -25,6 +27,7 @@ var products = [
       "dropdown3": "-",
       "productTitle": "V5.1 & V5.2 (AN & LE)",
       "pdf": "PG4800V5-Rev1.2.pdf",
+      "preview": "PG4800V5-Rev1.2.png",
       "summary": "PG4800V5 is high density ETSI compliant E1 access signalling platform available to developers and systems integrators to rapdily develop remote digital terminals to connect to ETSI Class 5 switches or to implement the LE functionality of a Class 5 switches to terminate exisitng ANs thus supporting migration of  TDM to IP based routed networks. It supports up-to 16 E1 interfaces and can be  configured partly as IDT and/or RDT. All 480 TDM channels are routed on the cPCI TDM backplane. Onboard software is pre-ploaded and controllable from CompactPCI host. Sample host applications for a variety of operating systems including Linux and RTOS are provided in source code to aid quick integration.",
       "relatedtitle": "V5.x cCPCI Card with 16 E1",
       "related":["CoV5.2.pdf","V4800IP_Datasheet_v4.2.pdf","Convertix-V5_Datasheet_v4.2.pdf"]
