@@ -11,38 +11,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cosystems.css">
-    <style>
-        body {
-            position: relative;
-        }
-    </style>
 </head>
 
 <body>
     <nav class="navbar sticky-top py-1" id="mainNav">
         <div class="container d-flex flex-column flex-md-row justify-content-between collapse navbar-collapse py-4">
-            <a class="navbar-brand py-2" href="index.html">
-                <img src="img/cosyslogo2.png" alt="logo" height="40">
+            <a class="navbar-brand py-2" href="#">
+                <img src="img/cosyslogo.png" alt="logo" height="40">
             </a>
-            <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#home">Home</a>
-            <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#aboutus">About</a>
-            <div class="btn-group">
-                <a class="py-2 d-none d-md-inline-block" href="products.html">Products</a>
-                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">PTSN Access Modules</a>
-                    <a class="dropdown-item" href="#">Data Interface Modules</a>
-                    <a class="dropdown-item" href="#">PTSN Access IP Systems</a>
-                    <a class="dropdown-item" href="#">Protocol Stacks</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">PTSN Access to IP Module</a>
-                </div>
-            </div>
-            <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#support">Tech Support</a>
-            <a class="py-2 d-none d-md-inline-block" data-toggle="tab" href="#contact">Contact</a>
+            <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
+            <a class="py-2 d-none d-md-inline-block" href="/about">About</a>
+            <a class="py-2 d-none d-md-inline-block" href="/products">Products</a>
+            <a class="py-2 d-none d-md-inline-block" href="/support">Support</a>
         </div>
     </nav>
     <nav id="breadcrumb" aria-label="breadcrumb">
@@ -86,12 +66,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js'></script>
-    <script src="js/product.js"></script>
-    <script>
-
-        var $pdf = $('.product-pdf')
-        PDFObject.embed("pdfs/CoISDN.pdf", $pdf);
-    </script>
 </body>
-
 </html>
