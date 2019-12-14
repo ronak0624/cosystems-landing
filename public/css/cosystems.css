@@ -15,14 +15,14 @@ body {
 /* Homepage */
 .header {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 45%;
   transform: translate(-50%, -50%);
 }
 
 .header h1 {
   color: #00198b;
-  font-size: 80px !important;
+  font-size: 80px;
 }
 
 @media(max-width: 900px) {
@@ -66,6 +66,12 @@ body {
   color: grey;
 }
 
+@media(max-width: 900px) {
+  .section-info {
+    font-size: 14px;
+  }
+  
+}
 .more {
   margin: 40px 0;
 }
