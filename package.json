@@ -1,0 +1,24 @@
+{
+  "name": "cosystems-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "products.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronak0624/cosystems-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronak0624/cosystems-landing/issues"
+  },
+  "homepage": "https://github.com/ronak0624/cosystems-landing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
