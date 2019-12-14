@@ -2,7 +2,7 @@ const express = require("express");
 
 const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000;
 
 const path = require("path");
 
@@ -14,6 +14,6 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(routes);
 
 
-app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+app.listen(process.env.PORT || port, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${port}!`);
 });
